@@ -13,3 +13,6 @@
 [submodule "fontconfig"]
 	path = fontconfig
 	url = git://anongit.freedesktop.org/fontconfig
+[submodule "mlt"]
+	path = mlt
+	url = https://github.com/wjhtinger/mlt.git
