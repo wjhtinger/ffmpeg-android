@@ -28,7 +28,8 @@ make clean
 --enable-libfreetype \
 --enable-libfribidi \
 --enable-libmp3lame \
---enable-fontconfig \
+--disable-fontconfig \
+--disable-libv4l2 \
 --enable-pthreads \
 --disable-debug \
 --disable-ffserver \
@@ -42,8 +43,8 @@ make clean
 --disable-shared \
 --enable-static \
 --pkg-config="${2}/ffmpeg-pkg-config" \
---prefix="${2}/build/${1}" \
---extra-cflags="-I${TOOLCHAIN_PREFIX}/include $CFLAGS" \
+--prefix="${TOOLCHAIN_PREFIX}" \
+--extra-cflags="-I${TOOLCHAIN_PREFIX}/include $CFLAGS -DBIONIC_IOCTL_NO_SIGNEDNESS_OVERLOAD" \
 --extra-ldflags="-L${TOOLCHAIN_PREFIX}/lib $LDFLAGS" \
 --extra-libs="-lpng -lexpat -lm" \
 --extra-cxxflags="$CXX_FLAGS" || exit 1

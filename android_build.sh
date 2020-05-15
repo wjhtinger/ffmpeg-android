@@ -21,10 +21,11 @@ do
   ./freetype_build.sh $i $BASEDIR 1 || exit 1
   ./expat_build.sh $i $BASEDIR 1 || exit 1
   ./fribidi_build.sh $i $BASEDIR 1 || exit 1
-  ./fontconfig_build.sh $i $BASEDIR 1 || exit 1
+#  ./fontconfig_build.sh $i $BASEDIR 1 || exit 1
   ./libass_build.sh $i $BASEDIR 1 || exit 1
   ./lame_build.sh $i $BASEDIR 1 || exit 1
   ./ffmpeg_build.sh $i $BASEDIR 0 || exit 1
+  ./mlt_build.sh $i $BASEDIR 0 || exit 1
 done
 
 rm -rf ${TOOLCHAIN_PREFIX}
