@@ -46,7 +46,7 @@ if [ $3 == 1 ]; then
   export CXX="${CROSS_PREFIX}g++"
   export OBJCOPY="${CROSS_PREFIX}objcopy"
   export ELFEDIT="${CROSS_PREFIX}elfedit"
-  export CPP="${CROSS_PREFIX}cpp"
+#  export CPP="${CROSS_PREFIX}cpp"
   export DWP="${CROSS_PREFIX}dwp"
   export GCONV="${CROSS_PREFIX}gconv"
   export GDP="${CROSS_PREFIX}gdb"
