@@ -16,3 +16,6 @@
 [submodule "mlt"]
 	path = mlt
 	url = https://github.com/wjhtinger/mlt.git
+[submodule "frei0r"]
+	path = frei0r
+	url = https://github.com/dyne/frei0r.git

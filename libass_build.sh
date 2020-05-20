@@ -15,6 +15,7 @@ make clean
   --disable-enca \
   --disable-asm \
   --enable-fontconfig \
+  --disable-require-system-font-provider \
   --disable-harfbuzz \
   --enable-static \
   --disable-shared \

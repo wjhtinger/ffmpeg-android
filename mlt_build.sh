@@ -13,8 +13,8 @@ case $1 in
   ;;
 esac
 
-export CC=/home/wangjh/work/video_edit/ffmpeg-android-wjhtinger2/toolchain-android/bin/arm-linux-androideabi-gcc
-export CXX=/home/wangjh/work/video_edit/ffmpeg-android-wjhtinger2/toolchain-android/bin/arm-linux-androideabi-g++
+#export CC=/home/wangjh/work/video_edit/ffmpeg-android-wjhtinger2/toolchain-android/bin/arm-linux-androideabi-gcc
+#export CXX=/home/wangjh/work/video_edit/ffmpeg-android-wjhtinger2/toolchain-android/bin/arm-linux-androideabi-g++
 
 make clean
 
