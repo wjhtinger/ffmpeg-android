@@ -15,6 +15,11 @@ esac
 
 make clean
 
+#export PKG_CONFIG_PATH=${TOOLCHAIN_PREFIX}/lib/pkgconfig
+export TARGET_OS=android
+#export NDK_ABI=armv7-a
+#export CPU=armv7-a
+
 ./configure \
 --target-os="$TARGET_OS" \
 --cross-prefix="$CROSS_PREFIX" \
@@ -22,17 +27,28 @@ make clean
 --cpu="$CPU" \
 --enable-runtime-cpudetect \
 --sysroot="$NDK_SYSROOT" \
+--enable-asm \
+--enable-neon \
+--enable-cross-compile \
+--enable-jni \
+--enable-mediacodec \
+--enable-decoder=h264_mediacodec \
+--enable-decoder=hevc_mediacodec \
+--enable-decoder=vp8_mediacodec \
+--enable-decoder=vp9_mediacodec \
+--enable-decoder=mpeg4_mediacodec \
+--enable-hwaccel=h264_mediacodec \
+--disable-swscale \
 --enable-pic \
 --enable-libx264 \
 --enable-libass \
 --enable-libfreetype \
 --enable-libfribidi \
---enable-libmp3lame \
+--disable-libmp3lame \
 --disable-fontconfig \
 --disable-libv4l2 \
 --enable-pthreads \
 --disable-debug \
---disable-ffserver \
 --enable-version3 \
 --enable-hardcoded-tables \
 --disable-ffplay \
